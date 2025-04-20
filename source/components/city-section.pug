@@ -1,0 +1,14 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-m-bold.font-s-48.text-up Откройте свой магазин «MAV»
+      .city-section__sub-title.font-s-20
+        | Проверьте, свободен ли ваш
+        br
+        | город для работы с нами
+      form.city-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Проверить
+      include ../components/footer.pug

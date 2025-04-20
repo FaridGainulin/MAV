@@ -1,0 +1,27 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.text-up.color-black
+        span.font-s-40
+          span.font-w-m-regular Зарабатывайте 
+          br.no-br
+          span.font-w-m-semi-bold.color-red от 1 млн ₸ ежемесячно
+        span.font-s-48.font-w-m-bold
+          | на продаже лакокрасочной 
+          br
+          | продукции от бренда «MAV»
+      .font-w-m-semi-bold.font-s-30.color-black
+        | Запустите работу бизнеса 
+        br
+        | по франшизе всего за 1,5 месяца
+      .main-section__text.font-s-20.color-black-80
+        | Получите подробный план 
+        br
+        | открытия магазина
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Получить
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1176" height="734" alt="image")

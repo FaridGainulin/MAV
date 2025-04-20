@@ -1,0 +1,38 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img-bg(src="images/finances-section-img-bg.png" loading="lazy" width="1314" height="904" alt="image")
+      h2.finances-section__title.font-w-m-bold.font-s-48.text-up Ключевые показатели франшизы
+      .finances-section__sub-title.font-s-20 На которые вы можете рассчитывать на старте бизнеса
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .font-w-m-bold.font-s-34.text-up 8 300 000 тенге
+            .font-s-18 ежемесячная <br> выручка
+          .finances-section__card.finances-section__card--black.swiper-slide
+            .font-w-m-bold.font-s-34.text-up с 1-го месяца
+            .font-s-18 вы начнете <br> зарабатывать
+          .finances-section__card.finances-section__card--white.swiper-slide
+            .font-w-m-bold.font-s-34.text-up.color-black 1 032 000 тенге
+            .font-s-18.color-black-80 ежемесячная <br> чистая прибыль
+          .finances-section__card.finances-section__card--white.swiper-slide
+            .font-w-m-bold.font-s-34.text-up.color-black 1,5 месяца
+            .font-s-18.color-black-80 для запуска <br> всех процессов
+          .finances-section__card.swiper-slide
+            .font-w-m-bold.font-s-34.text-up от 25 000 тенге
+            .font-s-18 средний чек одного <br> клиента
+          .finances-section__card.finances-section__card--black.swiper-slide
+            .font-w-m-bold.font-s-34.text-up от 8 продаж
+            .font-s-18 будет совершаться <br> ежедневно
+        .bullet-pagination
+      .finances-section__bottom
+        .font-w-m-semi-bold.font-s-30
+          | Узнайте, какими будут
+          br
+          | ваши стартовые инвестиции
+        .finances-section__bottom-text.font-s-20.color-white-80 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Скачать

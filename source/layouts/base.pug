@@ -1,0 +1,35 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description" content="Зарабатывайте от 1 млн ₸ ежемесячно на продаже лакокрасочной продукции от бренда «MAV»")
+    meta(name="HandheldFriendly" content="True")
+    meta(name="MobileOptimized" content="width")
+
+    link(rel="icon" href="favicon.ico" type="image/x-icon")
+
+    link(rel="stylesheet", href="css/vendor.css")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/main.css")
+
+    block head
+      title «MAV» - Франшиза магазина лакокрасочной продукции
+
+  body
+    block body
+    include ../components/privacyKZ
+    include ../components/modal-form-call-me
+    include ../components/modal-form-agreement
+
+    //- include ../components/modal-form-investments
+    //- include ../components/modal-form-plan
+    //- include ../components/modal-form-city
+    //- include ../components/modal-form-format
+
+    block scripts
+      script(src="js/vendor.js")
+      script(src="js/validation.js")
+      script(src="js/feedback.js")
+      script(src="js/app.js")

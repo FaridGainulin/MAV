@@ -1,0 +1,53 @@
+.header
+  &__container
+    display: flex
+    justify-content space-between
+    align-items: center
+
+  &__logo-wrapper
+    +above($breakpoints.sm)
+      flex-basis: 30%
+      display: flex
+
+  &__logo
+    width 158px
+    height: auto
+    +above($breakpoints.sm)
+      width 200px
+    +above($breakpoints.md)
+      width 250px
+    +above($breakpoints.xxl)
+      width 279px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      color: $color-black-60
+      text-align: center
+
+  &__call-me
+    +above($breakpoints.sm)
+      flex-basis: 30%
+      display: flex
+      justify-content flex-end
+
+  &__brand-mobile
+    position relative
+    z-index 1
+    color: $color-white-80
+    text-align: center
+    padding 8px 0
+    margin-top 5px
+    &:after
+      content: ""
+      position: absolute
+      z-index -1
+      background-color #3B3B3B
+      width 100vw
+      height: 100%
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+    +above($breakpoints.sm)
+      display: none

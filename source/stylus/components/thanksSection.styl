@@ -1,0 +1,40 @@
+.thanks-section
+  display: flex
+  flex-direction: column
+  justify-content center
+  align-items: center
+  height: 100%
+
+  &__container
+    text-align: center
+    color: #000
+
+  &__inner-text
+    padding: 20px 0 40px 0
+
+  &__container a
+    max-width 300px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      max-width 280px
+    +above($breakpoints.md)
+      max-width 300px
+    +above($breakpoints.xxl)
+      max-width 320px
+
+.thanks-page
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #F5F5F5
+
+.wrapper-header-thanks,
+.wrapper-footer-thanks
+  padding 15px 0
+  +above($breakpoints.sm)
+    padding 25px 0
+  +above($breakpoints.md)
+    padding 30px 0
+  +above($breakpoints.xxl)
+    padding 35px 0

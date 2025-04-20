@@ -1,0 +1,58 @@
+.input
+  height: 45px
+  width 100%
+  padding: 0 27px;
+  font-family: 'Arial-Regular'
+  font-weight: 400
+  font-size: 14px;
+  line-height: 110%
+  color: rgba(47, 47, 47, 0.5)
+  border: 1px solid #fff
+  border-radius: 100px;
+  background: #fff
+  position relative
+  overflow hidden
+  transition border-color 0.3s, box-shadow 0.3s, border 0.3s, background 0.3s
+
+  &:hover
+    border 1px solid #CCCCCC
+  &:focus
+    color: #2F2F2F
+    caret-color: #CCCCCC
+    border 1px solid #CCCCCC
+    box-shadow: 3px 3px 10px 0px #CCCCCC
+    &::placeholder
+      color: rgba(47, 47, 47, 0.5)
+  &::placeholder
+    color: rgba(47, 47, 47, 0.5)
+  +above($breakpoints.sm)
+    padding: 0 15px;
+    font-size: 14px;
+    height: 50px
+  +above($breakpoints.md)
+    padding: 0 22px;
+    font-size: 16px;
+    height: 60px
+  +above($breakpoints.xxl)
+    padding: 0 27px;
+    font-size: 18px;
+    height: 70px
+  &.error
+    border 1px solid $color-error
+    color: $color-error
+    caret-color: $color-error
+    box-shadow: 0px 0px 22px 0px $color-error
+    &::placeholder
+      color: $color-error
+    &::-ms-input-placeholder
+      color: $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)

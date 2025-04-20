@@ -1,0 +1,230 @@
+.calculation-section
+  background: linear-gradient(206deg, #000 0%, rgba(0, 0, 0, 0.8) 100%);
+
+  &__container
+    position relative
+    user-select: none
+    z-index 1
+    padding 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0
+    +above($breakpoints.md)
+      padding 70px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 102px
+
+  &__title,
+  &__text
+    text-align: center
+
+  &__text
+    padding 15px 0 20px
+    +above($breakpoints.sm)
+      padding 20px 0 30px
+    +above($breakpoints.md)
+      padding 25px 0 35px
+    +above($breakpoints.xxl)
+      padding 30px 0 40px
+
+  &__custom-select
+    position relative
+    width 280px
+    margin 0 auto
+    +above($breakpoints.sm)
+      width 350px
+    +above($breakpoints.md)
+      width 420px
+    +above($breakpoints.xxl)
+      width 480px
+
+  &__select-header
+    width 100%
+    border-radius: 38px
+    background-color transparent
+    border 1px solid #FD5356
+    color #FD5356
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    justify-content space-between
+    padding 10px 20px
+    cursor pointer
+    +above($breakpoints.sm)
+      padding 12px 25px
+    +above($breakpoints.md)
+      padding 13px 30px
+    +above($breakpoints.xxl)
+      height: 60px
+      padding 14px 35px
+
+  &__select-icon
+    width 12px
+    height: 7px
+    +above($breakpoints.sm)
+      width 16px
+      height: 9px
+    +above($breakpoints.md)
+      width 20px
+      height: 11px
+    +above($breakpoints.xxl)
+      width 22px
+      height: 13px
+
+  &__select-options
+    opacity: 0
+    visibility: hidden
+    transform: translateX(-50%) translateY(-10px)
+    transition: opacity 0.5s ease, transform 0.5s ease
+    position: absolute
+    top: 100%
+    left: 50%
+    width: 90%
+    background-color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase
+    border: 1px solid #FD5356
+    border-top: none
+    border-radius: 0 0 8px 8px
+    z-index: 10
+    padding: 10px 20px
+    +above($breakpoints.sm)
+      border-radius: 0 0 12px 12px
+      padding 10px 30px
+    +above($breakpoints.md)
+      border-radius: 0 0 16px 16px
+      padding 10px 35px
+    +above($breakpoints.xxl)
+      border-radius: 0 0 20px 20px
+      padding 10px 42px
+
+  &__select-options.show
+    opacity: 1
+    visibility: visible
+    transform: translateX(-50%) translateY(0)
+
+  &__select-options li
+    padding: 5px 0
+    cursor: pointer
+    transition: background 0.2s
+    color: #949494
+    +above($breakpoints.sm)
+      padding 7px 0
+    +above($breakpoints.md)
+      padding 8px 0
+    +above($breakpoints.xxl)
+      padding 10px 0
+
+  &__select-options li:hover
+    color: #FD5356
+
+  &__custom-range
+    position: relative;
+    width: 92%
+    margin: 30px auto 0
+    +above($breakpoints.sm)
+      width 96%
+      margin 35px auto 0
+    +above($breakpoints.md)
+      margin 55px auto 0
+    +above($breakpoints.xxl)
+      margin 74px auto 0
+
+  &__custom-range-track
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #363636;
+    border-radius: 10px;
+    +above($breakpoints.sm)
+      height: 8px
+    +above($breakpoints.md)
+      height: 10px
+    +above($breakpoints.xxl)
+      height: 12px
+
+  &__custom-range-progress
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #EF3E42
+    border-radius: 12px;
+
+  &__custom-range-thumb
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background linear-gradient(161deg, #fd5356 0%, #c41230 100%);
+    border: 1px solid #FD5356;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 0;
+    +above($breakpoints.sm)
+      width 24px
+      height: 24px
+    +above($breakpoints.md)
+      border: 2px solid #FD5356;
+      width 28px
+      height: 28px
+    +above($breakpoints.xxl)
+      width 32px
+      height: 32px
+
+  &__months
+    display: flex
+    align-items: center
+    justify-content space-between
+    margin 20px auto 30px
+    width 100%
+    +above($breakpoints.sm)
+      margin 25px auto 40px
+    +above($breakpoints.md)
+      margin 30px auto 50px
+    +above($breakpoints.xxl)
+      margin 34px auto 55px
+    span
+      display: flex
+      justify-content center
+      align-items: center
+      width 25px
+      height: 25px
+      border-radius: 50%
+      cursor pointer
+      color: #949494
+      +above($breakpoints.sm)
+        width 30px
+        height: 30px
+      +above($breakpoints.md)
+        width 38px
+        height: 38px
+      +above($breakpoints.xxl)
+        width 48px
+        height: 48px
+
+  &__months span.active
+    font-family: 'Arial-Bold'
+    font-weight: 700
+    background-color: transparent
+    border 1px solid #FD5356
+    color: #fff
+
+  &__block-result
+    width 100%
+    margin 0 auto
+    color: #FD5356
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    padding-bottom 7px
+    border-bottom 1px solid #4E4E4E
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content space-between
+      align-items: flex-start
+      padding-bottom 12px
+    +above($breakpoints.md)
+      border-bottom 2px solid #4E4E4E
+      padding-bottom 18px

@@ -1,0 +1,69 @@
+.btn
+  height: 45px
+  width 100%
+  user-select: none
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: #fff
+  border-radius: 100px
+  background: #000
+  text-transform: uppercase
+  font-family: 'Arial-Bold'
+  font-weight: 700
+  font-size: 14px
+  line-height: 100%
+  transition transform 0.5s, top 0.8s
+  +above($breakpoints.sm)
+    font-size: 14px;
+    height: 50px;
+  +above($breakpoints.md)
+    font-size: 16px;
+    height: 60px;
+  +above($breakpoints.xxl)
+    font-size: 18px;
+    height: 70px
+
+  &:hover
+    transform: scale(1.02)
+
+  &:active
+    top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation
+      0%
+          left: -150%
+      100% 
+          left: 250%
+
+  &--call-me
+    text-transform: none
+    font-size: 10px
+    height: 24px
+    width 118px
+    +above($breakpoints.sm)
+      font-size: 11px;
+      height: 30px;
+      width 130px
+    +above($breakpoints.md)
+      font-size: 13px;
+      height: 36px;
+      width 160px
+    +above($breakpoints.xxl)
+      font-size: 14px;
+      height: 40px
+      width 180px

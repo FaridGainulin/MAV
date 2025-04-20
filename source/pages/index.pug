@@ -1,0 +1,26 @@
+extends ../layouts/base
+
+block body
+  .layout
+    main.main
+      include ../components/main-section
+      include ../components/about-section
+      include ../components/details-section
+      include ../components/finances-section
+      include ../components/start-section
+      include ../components/calculation-section
+      include ../components/city-section
+
+      //- include ../components/invest-section
+      //- include ../components/steps-section
+      //- include ../components/footer
+      //- include ../components/header
+      //- include ../components/reasons-section
+      //- include ../components/support-section
+      //- include ../components/fill-section
+      //- include ../components/presentation-section
+      //- include ../components/info-section
+
+append scripts
+  script(src="js/swiper.js")
+  script(src="js/calculator.js")

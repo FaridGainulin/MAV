@@ -1,0 +1,18 @@
+section.location-section
+  .wrapper
+    .location-section__container
+      h2.location-section__title.font-w-bold.font-s-42.text-up
+        | Сделайте первый шаг, узнайте лучшие места 
+        br.no-br-md
+        | для открытия ЧЕРНЫЙ КОТ
+      .location-section__sub-title.font-s-24.text-up
+        | Просто укажите название вашего города 
+        br
+        | и получите список удачных локаций
+      form.location-section__form(data-city-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        .input.js-input-city.location-item
+          input.input.location-item.input-city-position(type="text" name="city" autocomplete="off" placeholder="Название города")
+          .input__progress.js-input-city-progress
+            span.js-input-city-percent 0%
+        button.btn.location-item(type="submit") Получить список локаций

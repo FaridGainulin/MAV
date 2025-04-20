@@ -1,0 +1,79 @@
+section.reasons-section
+  .wrapper
+    .reasons-section__container
+      img.reasons-section__icon(src="images/reasons-section-icon.png" loading="lazy" width="183" height="154" alt="icon")
+      h2.reasons-section__title.font-w-ultra-bold.font-s-56
+        span.color-green Почему 
+        | «ROYALIONCUP COFFEE»
+      .reasons-section__sub-title.font-w-bold.font-s-22
+        span.color-yellow 5 причин 
+        | открыть бизнес по нашей франшизе
+      .swiper-bullet
+        .reasons-section__cards.swiper-wrapper
+          .reasons-section__card.swiper-slide
+            .reasons-section__card-img-wrapper
+              .reasons-section__card-img-num.font-w-ultra-bold.font-s-40.color-yellow 01
+              img.reasons-section__card-img(src="images/reasons-section-card-img-1.jpg" loading="lazy" width="760" height="380" alt="image")
+            .reasons-section__card-title.font-w-bold.font-s-22 Высокая актуальность
+            .font-s-16
+              | По статистике, более 75% жителей 
+              br.no-br-xxl
+              | России ежедневно пьют кофе и эта 
+              br.no-br-xxl
+              | цифра непрерывно растет.
+          .reasons-section__card.swiper-slide
+            .reasons-section__card-img-wrapper
+              .reasons-section__card-img-num.font-w-ultra-bold.font-s-40.color-yellow 02
+              img.reasons-section__card-img(src="images/reasons-section-card-img-2.jpg" loading="lazy" width="760" height="380" alt="image")
+            .reasons-section__card-title.font-w-bold.font-s-22 Готовая концепция
+            .font-s-16
+              | Вы будете предлагать клиентам напитки 
+              br.no-br-xxl
+              | высокого качества и привлекать их уже 
+              br.no-br-xxl
+              | проработанной системой лояльности.
+          .reasons-section__card.swiper-slide
+            .reasons-section__card-img-wrapper
+              .reasons-section__card-img-num.font-w-ultra-bold.font-s-40.color-yellow 03
+              img.reasons-section__card-img(src="images/reasons-section-card-img-3.jpg" loading="lazy" width="760" height="380" alt="image")
+            .reasons-section__card-title.font-w-bold.font-s-22 Качественный продукт
+            .font-s-16
+              | Мы передадим вам технологии 
+              br.no-br-xxl
+              | производства напитков и поможем 
+              br.no-br-xxl
+              | правильно оборудовать кофейню.
+          .reasons-section__card.swiper-slide
+            .reasons-section__card-img-wrapper
+              .reasons-section__card-img-num.font-w-ultra-bold.font-s-40.color-yellow 04
+              img.reasons-section__card-img(src="images/reasons-section-card-img-4.jpg" loading="lazy" width="760" height="380" alt="image")
+            .reasons-section__card-title.font-w-bold.font-s-22 Опытные партнёры
+            .font-s-16
+              | Мы точно знаем, как правильно 
+              br.no-br-xxl
+              | позиционировать себя на рынке и 
+              br.no-br-xxl
+              | поможем вам легко начать зарабатывать.
+          .reasons-section__card.swiper-slide
+            .reasons-section__card-img-wrapper
+              .reasons-section__card-img-num.font-w-ultra-bold.font-s-40.color-yellow 05
+              img.reasons-section__card-img(src="images/reasons-section-card-img-5.jpg" loading="lazy" width="760" height="380" alt="image")
+            .reasons-section__card-title.font-w-bold.font-s-22 Масштабируемость
+            .font-s-16
+              | Вы сможете запустить неограниченное 
+              br.no-br-xxl
+              | количество кофеен и легко развить 
+              br.no-br-xxl
+              | бизнес до собственной сети.
+        .bullet-pagination
+      .reasons-section__bottom-title.font-w-bold.font-s-22
+        | Задайте любой вопрос о работе франшизы
+      form.reasons-section__form(data-feedback-form)
+        textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Задать вопрос
+      .reasons-section__agree-wrapper
+        include ../components/agree.pug
+      img.reasons-section__img(src="images/reasons-section-img.png" loading="lazy" width="1284" height="1672" alt="image")

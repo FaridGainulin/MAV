@@ -1,0 +1,30 @@
+section.calculation-section
+  .wrapper
+    .calculation-section__container
+      h2.calculation-section__title.font-w-m-bold.font-s-48.text-up Сколько вы будете зарабатывать?
+      .calculation-section__text.font-s-20 Тяните бегунок и узнайте, какой будет ваша прибыль
+      .calculation-section__custom-select.custom-select
+        #select-header.calculation-section__select-header
+          span#selected-option.font-s-28 Выберите формат:
+          img.calculation-section__select-icon(src="images/select-icon.svg" loading="lazy" width="22" height="13" alt="icon")
+        ul#select-options.calculation-section__select-options.font-s-22-a
+          li(data-value="500000") До 500 000 жителей
+          li(data-value="500001") От 500 000 жителей
+      .calculation-section__custom-range
+        .custom-range__track.calculation-section__custom-range-track
+          .custom-range__progress.calculation-section__custom-range-progress
+          .custom-range__thumb.calculation-section__custom-range-thumb
+      .calculation-section__months.font-s-18
+        span 3
+        span 6
+        span 9
+        span 12
+        span 15
+        span 18
+        span 21
+        span 24
+      .calculation-section__block-result.font-w-bold.font-s-30-a.text-up
+        span.color-white Результат:
+        span
+          span#result 0
+          span  тенге
