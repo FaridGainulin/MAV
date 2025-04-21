@@ -15,7 +15,7 @@ $.validator.addMethod(
 $.validator.addMethod(
   'phone',
   function (value) {
-    return /\+\d{1} \((7[0-6][0-9]|77[0-7])\) \d{3} \d{4}/.test(value) && !/(\d)\1{4,}/.test(value.replace(/[^\d]/g, ''));
+    return /\+\d{1} \(7\d{2}\) \d{3} \d{4}/.test(value) && !/(\d)\1{4,}/.test(value.replace(/[^\d]/g, ''))
   },
 );
 

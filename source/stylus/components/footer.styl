@@ -31,19 +31,23 @@
     +above($breakpoints.xxl)
       width 258px
 
+  &__block
+    text-align: center
+    color: $color-black-60
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 5px
+
   &__brand
     display: none
     +above($breakpoints.sm)
       display: block
-      color: $color-black-60
-      text-align: center
 
-  &__privacy-mobile
+  &__privacy
     cursor pointer
     text-decoration: underline
-    color: $color-black-60
-    +above($breakpoints.sm)
-      display: none
 
   &__call-me
     +above($breakpoints.sm)
